@@ -6,12 +6,12 @@ def is_palindrome(s: str):
             left += 1
             right -= 1
         else:
-            return remove(s, left + 1, right) or remove(s, left, right - 1)
+            return is_palindrome_between(s, left + 1, right) or is_palindrome_between(s, left, right - 1)
 
     return True
 
 
-def remove(string, left, right):
+def is_palindrome_between(string, left, right):
     while left < right:
         if string[left] != string[right]:
             return False
