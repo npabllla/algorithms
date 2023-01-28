@@ -41,4 +41,5 @@ def test():
     print(sum_of_three(arr, 7))
     print(sum_of_three(arr, 1))
 
+
 test()
